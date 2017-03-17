@@ -46,7 +46,7 @@ typings/
 .yarn-integrity
 .env
 
-# webpack dev-server folder
+# IDEA watcher folder
 dist
 # jekyll result folder
 public
