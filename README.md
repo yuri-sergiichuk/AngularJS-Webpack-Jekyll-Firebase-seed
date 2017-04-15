@@ -7,6 +7,12 @@ This repository contains example of the web application that uses:
 * Jekyll (as static content generator)
 * Firebase (as hosting)
 
+# Prerequisites
+
+* [Jekyll](https://jekyllrb.com/docs/installation/)
+* [Node](https://nodejs.org/en/download/package-manager/)
+
+
 # How to build
 
 Use `npm` scripts in order to provide real-time updates of both Angular app
