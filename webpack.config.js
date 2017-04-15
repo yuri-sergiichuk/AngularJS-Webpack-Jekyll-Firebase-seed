@@ -1,5 +1,5 @@
 'use strict';
-
+const path = require('path');
 const webpack = require('webpack');
 const uglifyJsConfig = {
     compress: {
@@ -20,13 +20,13 @@ const uglifyJsConfig = {
     sourceMap: true
 };
 const entry = {
-    app: './app/app.js', // angularJS application entry point
+    app: path.resolve(__dirname, './app/app.js'), // angularJS application entry point
     vendor: ['angular'] // application specific vendors
 };
 const config = {
     entry: entry,
     output: {
-        path: './src/assets/javascripts/', // output folder for the bundles (it's actually inside folder that is watched by Jekyll)
+        path: path.resolve(__dirname, './src/assets/javascripts/'), // output folder for the bundles (it's actually inside folder that is watched by Jekyll)
         filename: 'bundle.js',
         sourceMapFilename: 'bundle.js.map'
     },
